@@ -1,0 +1,58 @@
+.beneficiary-container {
+  margin: 10px;
+}
+
+.header {
+  background: linear-gradient(to right, #6a1b9a, #512da8);
+  color: white;
+  padding: 16px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  margin: 16px 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.beneficiary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.beneficiary-table th,
+.beneficiary-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.beneficiary-table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.beneficiary-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.icon-btn {
+  margin-right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
