@@ -29,6 +29,7 @@ const beneficiaries = useSelector((state: RootState) => state.beneficiaries.item
   // Load from localStorage on mount
   React.useEffect(() => {
     const stored = localStorage.getItem('beneficiaries');
+    console.log('Stored beneficiaries:', stored);
     if (stored) {
       dispatch(setBeneficiaries(JSON.parse(stored)));
     }
