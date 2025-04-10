@@ -42,6 +42,16 @@ const BeneficiaryForm: React.FC = () => {
   } = useForm<FormData>({ defaultValues });
 
   const onSubmit = (data: FormData) => {
+    // Check if a beneficiary with the same name already exists
+    const isDuplicate = beneficiaries.some(
+      (b) => b.fullName.toLowerCase() === data.fullName.toLowerCase() && (!isEdit || b.id !== Number(id))
+    );
+
+    if (isDuplicate) {
+      alert('Beneficiary with this name already exists!');
+      return; // Prevent form submission
+    }
+
     if (isEdit) {
       dispatch(updateBeneficiary({ ...data, id: Number(id) }));
     } else {
